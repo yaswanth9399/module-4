@@ -1,4 +1,9 @@
-var speakWord = "Hello";
-function speak(name) {
-  console.log(speakWord + " " + name);
-}
+(function(window) {
+	var speakWord = "Hello";
+	var helloSpeaker = function (name) {
+		console.log(speakWord + " " + name);
+	}
+
+	window.helloSpeaker = helloSpeaker;
+
+})(window);
